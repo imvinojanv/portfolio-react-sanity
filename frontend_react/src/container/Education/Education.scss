@@ -1,0 +1,132 @@
+.app__education {
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    height: 400px;
+}
+
+.app__education-container {
+    width: 80%;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.app__education-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: inset 0 0 0 1px rgba(66, 133, 156, .12), 0 12px 24px -12px rgba(66, 133, 156, .3);
+
+    @media screen and (min-width: 1420px) {
+        width: 45%;
+        // min-height: 280px;
+        margin: 2rem 1rem;
+    }
+
+    .app__education-box1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .app__education-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-right: 1rem;
+
+            h2 {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: var(--black-color);
+                margin-top: 3px;
+            }
+
+            h3 {
+                margin-top: 5px;
+                font-size: 1rem;
+                font-family: var(--base-font);
+                font-weight: 500;
+                color: var(--gray-color);
+            }
+        }
+
+        .app__education-img {
+            width: 50px;
+            // height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-left: 1rem;
+
+            img {
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    hr {
+        width: 80%;
+        margin: 5px 0;
+        border: 1px solid var(--primary-color);
+        border-radius: 50px;
+    }
+
+    .app__education-box2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        p {
+            margin: 10px 0;
+            color: var(--secondary-color);
+        }
+        
+        p:first-child {
+            width: 100%;
+            // color: var(--secondary-color);
+        }
+
+        p:last-child {
+            padding: 0 5px;
+        }
+    }
+
+    .app__education-box3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        p:first-child {
+            margin-top: 8px;
+        }
+
+        p:last-child {
+            margin: 5px 0 3px;
+        }
+    }
+}
