@@ -37,7 +37,7 @@ const Footer = () => {
         setIsFormSubmitted(true);
       })
   };
-  console.log('here', isFormSubmitted);
+  // console.log('here', isFormSubmitted);
 
   return (
     <>
