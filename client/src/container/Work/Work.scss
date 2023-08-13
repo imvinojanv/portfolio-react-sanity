@@ -152,7 +152,14 @@
             width: 50%;
             height: 50%;
             color: var(--white-color);
+            transition: all 0.3s ease;
         }
+
+        &:hover {
+            background-color: rgba(256,256,256,0.2);
+            color: var(--secondary-color);
+        }
+
     }
 }
 
@@ -166,7 +173,7 @@
     // height: 130px;
 
     h4 {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         line-height: 1.5;
         text-align: center;
     }
@@ -176,10 +183,15 @@
     }
 
     .app__work-tag {
-        position: absolute;
-        padding: 0.5rem 1rem;
-        border-radius: 10px;
-        background-color: var(--white-color);
-        top: -25px;
+        position: relative;
+        padding: 0.3rem 1rem;
+        border-radius: 25px;
+        background-color: var(--lightGray-color);
+        margin-top: 0.75rem;
+        
+        p {
+            color: var(--gray-color);
+            font-weight: 500;
+        }
     }
 }

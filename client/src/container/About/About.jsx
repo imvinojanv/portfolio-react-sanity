@@ -5,13 +5,6 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './About.scss';
 
-// Static Data
-// const abouts = [
-//   { title: 'Founder and CEO', description: 'I am a Founder and CEO at DecHorizon Technologies', imgUrl: images.about01 },
-//   { title: 'Web Designer', description: 'I am a Good Web designer', imgUrl: images.about02 },
-//   { title: 'Software Engineer', description: 'I am a Software Engineer at DecHorizon', imgUrl: images.about03 },
-//   { title: 'UI/UX Designer', description: 'I am a Good UI/UX Designer', imgUrl: images.about04 }
-// ];
 
 const scaleVariants = {
   whileInView: {
@@ -58,13 +51,16 @@ const About = () => {
             className='app__aboutme-item app__flex'
             key={aboutMe.title + index}
           >
-            <motion.div
+            <div className='app__aboutme-img app__flex'>
+              <img src={urlFor(aboutMe.imgUrl)} alt={aboutMe.title} />
+            </div>
+            {/* <motion.div
               variants={scaleVariants}
               whileInView={scaleVariants.whileInView}
               className='app__aboutme-img app__flex'
             >
               <img src={urlFor(aboutMe.imgUrl)} alt={aboutMe.title} />
-            </motion.div>
+            </motion.div> */}
             <div className='app__aboutme-content'>
               <p>{aboutMe.content}</p>
               <div className='strength-text'>
