@@ -1,5 +1,5 @@
 ## Short Links
-Frontend: [www.vinojan.online](https://vinojan.online/)
+Frontend: [www.vinojan.online](https://vinojan.online/) & [Vercel page](https://portfolio-react-sanity.vercel.app/)
 <br>
 Sanity Studio: [Sanity CMS](https://vinojan-portfolio.sanity.studio/)
 <br>
