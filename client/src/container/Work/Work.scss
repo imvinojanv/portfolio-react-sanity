@@ -43,43 +43,73 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    // gap: 30px;
+    width: 100%;
+
+    .app__work-box {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; 
+        padding: 1rem;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            width: 50%;
+        }
+
+        @media (min-width: 992px) and (max-width: 1200px) {
+            width: 33%;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 25%;
+        }
+
+        @media screen and (min-width: 2000px) {
+            width: 20%;
+        }
+    }
 
     .app__work-item {
         flex-direction: column;
-        margin: 2rem;
-        padding: 1rem;
-        border-radius: 0.5rem;
+        // margin: 2rem;
+        padding: 0.5rem;
+        border-radius: 12px;
         background-color: var(--white-color);
         color: #000;
         cursor: pointer;
         transition: all 0.3s ease;
+        width: 100%;
 
         &:hover {
             box-shadow: inset 0 0 0 1px rgba(66, 133, 156, .12), 0 12px 24px -12px rgba(66, 133, 156, .3);
         }
 
-        @media screen and  (min-width: 500px) {
-            width: 270px;
-        }
-
         @media screen and  (min-width: 2000px) {
-            width: 470px;
             padding: 1.2rem;
             border-radius: 0.75rem;
-        }
-
-        @media screen and  (max-width: 300px) {
-            width: 100%;
-            margin: 1rem;
         }
     }
 }
 
 .app__work-img {
     width: 100%;
-    height: 230px;
+    height: 200px;
     position: relative;
+
+    @media screen and  (max-width: 500px) {
+        height: 240px;
+    }
+
+    @media (min-width: 550px) and  (max-width: 768px) {
+        height: 268px;
+    }
 
     img {
         width: 100%;
@@ -127,14 +157,22 @@
 }
 
 .app__work-content {
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     width: 100%;
     position: relative;
+    display: flex;
     flex-direction: column;
+    justify-content: start;
+    // height: 130px;
 
     h4 {
         margin-top: 1rem;
         line-height: 1.5;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
     }
 
     .app__work-tag {

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './App.css';
 import './App.scss'
 
 import { About, Footer, Header, Skills, Testimonial, Work, Education } from './container';
